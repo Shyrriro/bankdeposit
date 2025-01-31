@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 15px;
+    margin: auto;
+    /* margin-top: 10px; */
+    width: 800px;
+    height: auto;
+    background-color: seagreen;
+    justify-content: center;
+    align-items: center;
+}
+.field {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-weight: bold;
+    color: azure;
+    padding: 50px;
+}
+
+h1 {
+    color: azure;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    display: flex;
+    border-radius: 7px;
+    border: none;
+}
+.input {
+    width: 300px;
+    flex: 1;
+}
+
+button {
+    font-weight: bold;
+    background-color: rgb(240, 230, 230);
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.103);
+}
+
+button:hover {
+    background-color: rgb(221, 223, 222);
+}
+
+.container_button {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.deposit_button {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    background-color: rgb(221, 223, 222);
+    color: rgb(19, 107, 33);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgb(0, 0, 0);
+}
+
+.deposit_button:hover {
+    background-color: rgb(221, 223, 222);
+    color: rgb(235, 13, 50);
+    transition: 2s;
+}
+
+
+
+.log {
+    color: azure;
+    font-size: 20px;
+}

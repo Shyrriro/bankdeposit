@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Deposito</title>
+</head>
+<body>
+    <div class="container">
+        <h1><i></i>Depósito Bancário</h1>
+        <form class="field" action="">
+            <div class="input">
+                <label for="name">Nome:</label>
+                <input class="input_name" placeholder="Nome" type="text" onkeydown="return /[a-z]/i.test(event.key)" required>
+            </div>
+            <div class="input">
+                <label for="lastname">Sobrenome:</label>
+                <input class="input_lastname" placeholder="Sobrenome" type="text" required>
+            </div>
+            <div class="input">
+                <label for="account">Conta:</label>
+                <input class="input_account" maxlength="9" id="account" placeholder="0000000-0" type="text" required>
+            </div>
+            <div class="input">
+                <label for="agency">Agência:</label>
+                <input class="input_agency" maxlength="6" id="agency" placeholder="0000-0" type="text" required>
+            </div>
+            <div class="input">
+                <label for="value">Valor:</label>
+                <input class="input_value" placeholder="R$ 0,00" id="value" type="text" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal="," required>
+            </div>
+            <div class="container_button">
+                <div class="deposit_button">
+                    <p>DEPOSITAR</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container log"></div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
